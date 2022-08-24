@@ -11,56 +11,33 @@
   />
 </a>
 <script type="text/javascript">
-    function sendLinkCustom() {
-        Kakao.init("6cfcf48d2334800f3f46140d60fbc049");
-        Kakao.link.sendCustom({ 
-	template ID: 70275
-        });
-    }
-</script>
-
-<script>
-try {
-  function sendLinkDefault() {
-    Kakao.init('6cfcf48d2334800f3f46140d60fbc049')
+ Kakao.init('6cfcf48d2334800f3f46140d60fbc049');
+  function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '딸기치즈케이크', description: '# '딸기치즈케이크',
-        description: '#고양이송이 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        title: '동훈과 어진의 결혼식에 초대합니다!',
+        description: '22년 9월 25일 11시 제이오스티엘 티파니홀',
         imageUrl:
-          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+          'http://k.kakaocdn.net/dn/ugZH9/btrKkJVhoUb/KyAIlMY7CSprdUqUgori1k/kakaolink40_original.png',
         link: {
-          mobileWebUrlpers: 'https://developers. ,
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: 'https://dnuwedding.quv.kr',
+          webUrl: 'https://dnuwedding.quv.kr',
         },
       },
-      social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845,
-      },
-      button: [
+      buttons: [
         {
-          title: '웹으로 보기',
+          title: '모바일 청첩장 보러가기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
-          },
-        },
-        {
-          title: '앱 으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'https://dnuwedding.quv.kr',
+            webUrl: 'https://dnuwedding.quv.kr',
           },
         },
       ],
     })
   }
-; window.kakaoDemoCallback && window.kakaoDemoCallback() }
-catch(e) { window.kakaoDemoException &&
-window.kakaoDemoException(e) }
 </script>
-</body>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
 </html>
